@@ -1,11 +1,17 @@
 // ==UserScript==
-// @name          tixcraft
-// @match         https://tixcraft.com/activity/game/*
-// @match         https://tixcraft.com/ticket/verify/*
-// @match         https://tixcraft.com/ticket/area/*
-// @match         https://tixcraft.com/ticket/ticket/*
-// @grant         none
-// @run-at        document-start
+// @name          Tixcraft 自動搶票優化腳本
+// @namespace     https://tixcraft.com/
+// @version       1.0.1 // 建議修改版本號，以區分舊版
+// @description   【加速版】優化點擊流程，提高搶票效率，適用於 tixcraft。
+// @author        YourName (您的名字或暱稱)
+// @match         https://tixcraft.com/activity/game/*
+// @match         https://tixcraft.com/ticket/verify/*
+// @match         https://tixcraft.com/ticket/area/*
+// @match         https://tixcraft.com/ticket/ticket/*
+// @grant         none
+// @run-at        document-start
+// @license       GPL-3.0-or-later // 建議添加授權協議
+// @locale        zh-TW // 這是解決「語言設定必須存在」的關鍵
 // ==/UserScript==
 
 /* ==== 可調整設定區 ==== */
@@ -314,4 +320,5 @@ if (url.includes("/ticket/verify/")) {
 
   // 啟動主流程
   processPage();
+
 }
